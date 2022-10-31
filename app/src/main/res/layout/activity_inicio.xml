@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InicioActivity">
-
+    tools:context=".MainActivity"
+    android:orientation="vertical">
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:id="@+id/tab">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tienda"
+            android:text="@string/text_tiendas"
             />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/productos"
+            android:text="@string/text_mistiendas"
             />
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mistiendas"
+            android:text="@string/text_productos"
             />
 
     </com.google.android.material.tabs.TabLayout>
-
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/contenedor"
+        android:id="@+id/viewpager1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </androidx.viewpager.widget.ViewPager>
-
 </LinearLayout>

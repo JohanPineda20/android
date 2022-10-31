@@ -12,4 +12,8 @@
     <string name="mistiendas">Mis tiendas</string>
     <string name="productos">Productos</string>
     <string name="tienda">Tienda</string>
+    <string name="descripcionTienda">Descripcion</string>
+    <string name="telefonoTienda">Telefono</string>
+    <string name="botonTienda">Guardar tienda</string>
+    <string name="nombreTienda">Nombre</string>
 </resources>
