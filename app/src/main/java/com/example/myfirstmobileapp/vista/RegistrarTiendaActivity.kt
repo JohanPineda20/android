@@ -28,6 +28,6 @@ class RegistrarTiendaActivity : AppCompatActivity() {
         val myRef: DatabaseReference = database.reference
         val tienda = Tienda(myRef.push().key.toString(), nombre, descripcion, "", "", telefono, "")
         myRef.child("tiendas").child(tienda.id).setValue(tienda)
-
+        finish()
     }
 }
