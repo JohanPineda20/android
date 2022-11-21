@@ -9,7 +9,7 @@ public class RetrofitInstance {
 
     public static Retrofit getRetrofitInstance(){
                  retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.github.com/")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
